@@ -1,1 +1,35 @@
-
+body {
+  font-family: sans-serif;
+  background: #f4f9fc;
+  padding: 2rem;
+}
+.malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.ramo {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.ramo.aprobado {
+  background-color: #8dcfec;
+  text-decoration: line-through;
+  color: #555;
+  border-color: #70b4da;
+}
+.ramo.cursando {
+  background-color: #46a2da;
+  color: white;
+  font-weight: bold;
+}
+.ramo.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+}
